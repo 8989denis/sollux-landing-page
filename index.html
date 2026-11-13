@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLLUX Lighting - Kolor i forma w nowym świetle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAGŁÓWEK -->
+    <header id="main-header">
+        <div class="header-container">
+            <div class="logo">SOLLUX</div>
+
+            <nav class="nav-links">
+                <a href="#">Lampy <span class="arrow-down">▼</span></a>
+                <a href="#">Kolory <span class="arrow-down">▼</span></a>
+                <a href="#">Pomieszczenia <span class="arrow-down">▼</span></a>
+                <a href="#">Nowości</a>
+                <a href="#">Bestsellery</a>
+                <a href="#">Promocje</a>
+            </nav>
+
+            <div class="header-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Czego szukasz?">
+                    <button class="search-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                    </button>
+                </div>
+                <a href="#" class="create-lamp-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                    Stwórz swoją lampę
+                </a>
+                <a href="#" class="icon-link">👤</a>
+                <a href="#" class="icon-link">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEKCJA HERO -->
+    <section class="hero-section" id="heroSection">
+        <div class="hero-slider" id="heroSlider">
+            <!-- Slajd 1 -->
+            <div class="hero-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=1920&q=80');">
+                <div class="hero-content">
+                    <span class="sub-title">Bestsellery SOLLUX</span>
+                    <h1>Kolor i forma<br>w nowym świetle</h1>
+                    <a href="#bestsellery" class="btn-primary">Sprawdź bestsellery</a>
+                </div>
+            </div>
+            <!-- Slajd 2 -->
+            <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=1920&q=80');">
+                <div class="hero-content">
+                    <span class="sub-title">Kolekcja Premium</span>
+                    <h1>Odkryj nowe<br>doznania świetlne</h1>
+                    <a href="#" class="btn-primary">Zobacz kolekcję</a>
+                </div>
+            </div>
+            <!-- Slajd 3 -->
+            <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?auto=format&fit=crop&w=1920&q=80');">
+                <div class="hero-content">
+                    <span class="sub-title">Innowacyjne rozwiązania</span>
+                    <h1>Światło, które<br>inspiruje</h1>
+                    <a href="#" class="btn-primary">Dowiedz się więcej</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- NOWE STRZAŁKI SLIDERA -->
+        <button class="slider-arrow prev" id="prevSlide">&#10094;</button>
+        <button class="slider-arrow next" id="nextSlide">&#10095;</button>
+
+        <!-- NOWE WSKAŹNIKI (PASKI NA DOLE) -->
+        <div class="slider-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+        </div>
+
+        <!-- PLAKIETKA Z OCENĄ -->
+        <div class="rating-badge">
+            <span class="rating-score">4.8</span>
+            <span class="rating-star">★</span>
+            <span class="rating-text">Uwielbiany przez klientów</span>
+        </div>
+
+        <!-- INTERAKCJA Z LAMPAMI -->
+        <div class="lamps-interactive-area" id="lampsToggle" title="Kliknij, aby włączyć lampy!">
+            <div class="lamp-glow-spot"></div>
+        </div>
+    </section>
+
+    <!-- PASEK KORZYŚCI -->
+    <section class="benefits-bar">
+        <div class="benefits-container">
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 14L4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 015.5 5.5v0a5.5 5.5 0 01-5.5 5.5H11"/></svg>
+                </div>
+                <div class="benefit-text">
+                    <strong>Zwroty nawet do 100 dni</strong>
+                    <small>szybkie i proste</small>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+                </div>
+                <div class="benefit-text">
+                    <strong>5 lat gwarancji</strong>
+                    <small>na wszystkie produkty</small>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                </div>
+                <div class="benefit-text">
+                    <strong>Darmowa dostawa</strong>
+                    <small>już od 299 zł</small>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="benefit-text">
+                    <strong>Polskie produkty</strong>
+                    <small>sprawdzona jakość</small>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h8m-4-9v9m-8-11h16a2 2 0 002-2V6a2 2 0 00-2-2H4a2 2 0 00-2 2v3a2 2 0 002 2z"/><path d="M7 4V2h10v2"/></svg>
+                </div>
+                <div class="benefit-text">
+                    <strong>Oficjalny sklep producenta</strong>
+                    <small>gwarancja satysfakcji</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCJA BENTO GRID (PRZYWRÓCONA POPRZEDNIA WERSJA) -->
+    <section class="bento-section" id="bestsellery">
+        <div class="bento-grid">
+            <div class="bento-card card-dark">
+                <div class="card-img-wrapper"><img src="https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=800&q=80" alt="Marka THORO"></div>
+                <div class="card-content">
+                    <span class="card-category">Marka THORO</span>
+                    <h3>Poznaj lampy premium</h3>
+                    <a href="#" class="btn-card-dark">Odwiedź sklep THORO</a>
+                </div>
+            </div>
+            <div class="bento-card card-blue">
+                <div class="card-img-wrapper"><img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Konfigurator 3D"></div>
+                <div class="card-content">
+                    <span class="card-category">Konfigurator 3D</span>
+                    <h3>Wybierz projekt i dostosuj go do swojego wnętrza</h3>
+                    <a href="#" class="btn-card-dark">Stwórz swój projekt</a>
+                </div>
+            </div>
+            <div class="bento-card card-light">
+                <div class="card-img-wrapper"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80" alt="Katalog"></div>
+                <div class="card-content">
+                    <span class="card-category">Katalog</span>
+                    <h3>Odkryj najnowszy katalog</h3>
+                    <a href="#" class="btn-card-dark">Sprawdź katalog</a>
+                </div>
+            </div>
+            <div class="bento-card card-cream">
+                <div class="card-img-wrapper"><img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80" alt="SOLLUX SMART"></div>
+                <div class="card-content">
+                    <span class="card-category">SOLLUX SMART</span>
+                    <h3>Przymierz lampę w aplikacji</h3>
+                    <a href="#" class="btn-card-dark">Pobierz aplikację na telefon</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCJA SHADER WEBGL -->
+    <section class="shader-section">
+        <div id="webgl-shader-container"></div>
+        <div class="shader-content">
+            <h2>Twoje wnętrze zasługuje na<br>wyjątkowe światło</h2>
+            <a href="#" class="btn-primary">Kup teraz</a>
+            <p class="shader-info">Od 119 zł na oficjalnej stronie producenta SOLLUX</p>
+        </div>
+    </section>
+
+    <!-- STOPKA -->
+    <footer>
+        <!-- ... (STOPKA POZOSTAJE BEZ ZMIAN - SKOPIUJ Z POPRZEDNIEGO KODU) ... -->
+        <div class="footer-container">
+            <div class="footer-col-brand">
+                <div class="footer-logo">SOLLUX</div>
+                <div class="social-icons">
+                    <a href="#">f</a>
+                    <a href="#">ig</a>
+                    <a href="#">tt</a>
+                    <a href="#">yt</a>
+                </div>
+            </div>
+            <div class="footer-links-grid">
+                <div class="footer-col">
+                    <h4>Moje zamówienia</h4>
+                    <a href="#">Status zamówienia</a>
+                    <a href="#">Śledzenie przesyłki</a>
+                    <a href="#">Chcę zareklamować produkt</a>
+                    <a href="#">Informacje o wymianie</a>
+                    <a href="#">Kontakt</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Moje konto</h4>
+                    <a href="#">Zarejestruj się</a>
+                    <a href="#">Koszyk</a>
+                    <a href="#">Listy zakupowe</a>
+                    <a href="#">Lista zakupionych produktów</a>
+                    <a href="#">Historia transakcji</a>
+                    <a href="#">Moje rabaty</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Regulaminy</h4>
+                    <a href="#">Sposoby wysyłki</a>
+                    <a href="#">Sposoby płatności</a>
+                    <a href="#">Regulamin sklepu</a>
+                    <a href="#">Polityka prywatności</a>
+                    <a href="#">Polityka bezpieczeństwa</a>
+                    <a href="#">Zmień ustawienia ciasteczek</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Informacje</h4>
+                    <a href="#">O nas</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Kurs światła</a>
+                    <a href="#">Inspiracje</a>
+                    <a href="#">Marka premium</a>
+                    <a href="#">Gwarancja</a>
+                    <a href="#">Konfigurator 3D</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Współpraca</h4>
+                    <a href="#">Dla Architekta</a>
+                    <a href="#">Modele 3D</a>
+                    <a href="#">Dystrybucja</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-grid">
+            <div class="footer-bottom-section">
+                <span class="bottom-label">Płatności i dostawy</span>
+                <div class="payment-badges">
+                    <span>VISA</span> <span>Mastercard</span> <span>Blik</span> <span>PayPal</span> <span>InPost</span> <span>DPD</span> <span>DHL</span> <span>GLS</span>
+                </div>
+            </div>
+            <div class="footer-bottom-section">
+                <span class="bottom-label">Nagrody</span>
+                <div class="awards-badges">
+                    <span>🏆 Orły Oświetlenia</span> <span>Gazebiznesu</span> <span>Solidna Firma</span>
+                </div>
+            </div>
+            <div class="footer-bottom-section">
+                <span class="bottom-label">Nasze sklepy</span>
+                <div class="country-flags">
+                    <span>🇵🇱</span> <span>🇩🇪</span> <span>🇪🇸</span> <span>🇷🇴</span> <span>🇫🇷</span> <span>🇬🇧</span> <span>🇳🇱</span> <span>🇸🇪</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-legal">
+            <p>W sklepie prezentujemy ceny brutto (z VAT). Stawki VAT dla konsumentów z kraju: Polska.</p>
+            <p>NIP: 6070082443 &nbsp;|&nbsp; +48 668 806 323 (Pn - Pt 7:00 - 15:00) &nbsp;|&nbsp; sklep@sollux.pl &nbsp;|&nbsp; Sollux Lighting Sp. z o.o. &nbsp;|&nbsp; Władysława Łokietka 35, 64-840 Budzyń (POLSKA)</p>
+            <div class="footer-powered">
+                <span>Design & Code <strong>IdoMods</strong></span> &nbsp;|&nbsp; <span>Powered by <strong>IdoSell</strong></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
